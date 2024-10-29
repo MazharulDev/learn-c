@@ -57,14 +57,17 @@ int main()
     // float a = 2.5;
     // printf("%.2f", a);
 
-    int items = 50;
-    float cost_per_item = 2.22;
-    float total_cost = items * cost_per_item;
-    char currency = '$';
-    printf("number of items: %d\n", items);
-    printf("Cost per Item: %c%.2f\n", currency, cost_per_item);
+    // int items = 50;
+    // float cost_per_item = 2.22;
+    // float total_cost = items * cost_per_item;
+    // char currency = '$';
+    // printf("number of items: %d\n", items);
+    // printf("Cost per Item: %c%.2f\n", currency, cost_per_item);
 
-    printf("Total cost: %c%.2f\n", currency, total_cost);
+    // printf("Total cost: %c%.2f\n", currency, total_cost);
+
+    const int a = 5;
+    printf("show result: %i", a);
 
     return 0;
 }
