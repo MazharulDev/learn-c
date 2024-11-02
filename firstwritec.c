@@ -1,7 +1,12 @@
 #include <stdio.h>
+#include <time.h>
 
 int main()
 {
+    clock_t start, end;
+    double cpu_time_used;
+    start = clock();
+
     // text formatting
 
     // printf("Hello, world!\n\n"); // \n for new line
@@ -66,8 +71,25 @@ int main()
 
     // printf("Total cost: %c%.2f\n", currency, total_cost);
 
-    const int a = 5;
-    printf("show result: %i", a);
+    // const int a = 5;
+    // printf("show result: %i", a);
+
+    // int i;
+    // for (i = 0; i < 10000; i++)
+    // {
+    //     printf("%d\n", i);
+    // }
+    int i;
+
+    for (i = 0; i <= 100; i += 10)
+    {
+        printf("%d\n", i);
+    }
+
+    end = clock();
+    cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
+
+    printf("Execution time: %f seconds\n", cpu_time_used);
 
     return 0;
 }
