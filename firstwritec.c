@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <time.h>
+#include <string.h>
 
 int main()
 {
@@ -79,12 +80,18 @@ int main()
     // {
     //     printf("%d\n", i);
     // }
-    int i;
+    // int i;
 
-    for (i = 0; i <= 100; i += 10)
-    {
-        printf("%d\n", i);
-    }
+    // for (i = 0; i <= 100; i += 10)
+    // {
+    //     printf("%d\n", i);
+    // }
+
+    // char name[] = "Mazharul";
+    // printf("My name is %s \n", name);
+
+    char text[] = "My name\'s \"Mazharul\" \0";
+    printf("%s\n", text);
 
     end = clock();
     cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
