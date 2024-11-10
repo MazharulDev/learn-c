@@ -90,8 +90,37 @@ int main()
     // char name[] = "Mazharul";
     // printf("My name is %s \n", name);
 
-    char text[] = "My name\'s \"Mazharul\" \0";
-    printf("%s\n", text);
+    // char text[] = "My name\'s \"Mazharul\" \0";
+    // printf("%s\n", text);
+    // char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    // printf("%d\n", strlen(alphabet));
+    // printf("%d\n", sizeof(alphabet));
+
+    // char str1[] = "hello";
+    // char str2[] = "world";
+    // strcat(str1, str2);
+    // printf("Concatenated string: %s\n", str1);
+
+    // char str1[] = "hello";
+    // char str2[] = "world";
+    // strcpy(str1, str2); // copy str2 to str1
+    // printf("copy: %s\n", str1);
+
+    // char str1[] = "Hello";
+    // char str2[] = "Hello";
+    // char str3[] = "Hi";
+
+    // printf("%d\n", strcmp(str1, str2));
+    // printf("%d\n", strcmp(str1, str3));
+
+    // Create an integer variable that will store the number we get from the user
+    int myNum;
+
+    printf("Type a number: \n");
+
+    scanf("%d", &myNum);
+
+    printf("your inputed number is %d\n", myNum);
 
     end = clock();
     cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
