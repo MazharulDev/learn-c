@@ -2,6 +2,15 @@
 #include <time.h>
 #include <string.h>
 
+void showMyName(char name[], int age){
+    printf("My Name is %s\n and i'm %i year's old\n",name, age);
+};
+
+void calculateSum(int x, int y) {
+  int sum = x + y;
+  printf("The sum of %d + %d is: %d\n", x, y, sum);
+}
+
 int main()
 {
     clock_t start, end;
@@ -114,13 +123,17 @@ int main()
     // printf("%d\n", strcmp(str1, str3));
 
     // Create an integer variable that will store the number we get from the user
-    int myNum;
+    // int myNum;
 
-    printf("Type a number: \n");
+    // printf("Type a number: \n");
 
-    scanf("%d", &myNum);
+    // scanf("%d", &myNum);
 
-    printf("your inputed number is %d\n", myNum);
+    // printf("your inputed number is %d\n", myNum);
+
+    // showMyName("Md Mazharul Islam",24);
+    calculateSum(5, 3);
+
 
     end = clock();
     cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
