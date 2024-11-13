@@ -2,6 +2,15 @@
 #include <time.h>
 #include <string.h>
 
+void showMyName(char name[], int age){
+    printf("My Name is %s\n and i'm %i year's old\n",name, age);
+};
+
+void calculateSum(int x, int y) {
+  int sum = x + y;
+  printf("The sum of %d + %d is: %d\n", x, y, sum);
+}
+
 int main()
 {
     clock_t start, end;
@@ -131,10 +140,16 @@ int main()
 
     // when use fgets then all word print
 
-    char fullName[20];
-    printf("Enter your full name: ");
-    fgets(fullName, sizeof(fullName), stdin);
-    printf("Hello, %s!\n", fullName);
+    // char fullName[20];
+    // printf("Enter your full name: ");
+    // fgets(fullName, sizeof(fullName), stdin);
+    // printf("Hello, %s!\n", fullName);
+
+    // printf("your inputed number is %d\n", myNum);
+
+    // showMyName("Md Mazharul Islam",24);
+    calculateSum(5, 3);
+
 
     end = clock();
     cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
