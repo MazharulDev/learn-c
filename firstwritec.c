@@ -114,13 +114,27 @@ int main()
     // printf("%d\n", strcmp(str1, str3));
 
     // Create an integer variable that will store the number we get from the user
-    int myNum;
+    // int myNum;
 
-    printf("Type a number: \n");
+    // printf("Type a number: \n");
 
-    scanf("%d", &myNum);
+    // scanf("%d", &myNum);
 
-    printf("your inputed number is %d\n", myNum);
+    // printf("your inputed number is %d\n", myNum);
+
+    // show only first word print
+
+    // char name[20];
+    // printf("Enter your name: %s");
+    // scanf("%s", name);
+    // printf("Hello, %s!\n", name);
+
+    // when use fgets then all word print
+
+    char fullName[20];
+    printf("Enter your full name: ");
+    fgets(fullName, sizeof(fullName), stdin);
+    printf("Hello, %s!\n", fullName);
 
     end = clock();
     cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
