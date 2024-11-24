@@ -153,9 +153,9 @@ int main()
   // calculateSum(5, 3);
 
   FILE *fptr;
-  fptr = fopen("newFile.txt", "a");
-  fprintf(fptr, "My name is Mazharul");
-  fprintf(fptr, "\ni'm 24 years old");
+  fptr = fopen("newFile.txt", "r");
+  // fprintf(fptr, "My name is Mazharul");
+  // fprintf(fptr, "\ni'm 24 years old");
   // fclose(fptr);
 
   end = clock();
